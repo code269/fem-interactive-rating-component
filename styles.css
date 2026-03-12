@@ -12,6 +12,9 @@
   --fs-body: 0.9375rem;
   --fw-reg: 400;
   --fw-bold: 700;
+
+  /* Spacing */
+  /* --space-lg: 2em; */
 }
 
 /* Reset start */
@@ -34,6 +37,10 @@ img {
 ul {
   list-style: none;
 }
+
+button {
+  font-family: inherit;
+}
 /* Reset end */
 
 body {
@@ -48,12 +55,75 @@ body {
 }
 
 main {
+  padding: 2em;
+  max-inline-size: 25em;
+  border-radius: 1.75em;
   color: var(--clr-grey-500);
   background-color: var(--clr-grey-900);
 }
 
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.rating-state {
+  display: grid;
+  gap: 2em;
+}
+
+.text-content {
+  display: grid;
+  gap: 1em;
+}
+
 .heading {
+  font-size: 1.5em;
   color: var(--clr-white);
+}
+
+.star-icon {
+  background-color: var(--clr-grey-950);
+  padding: 0.75em;
+  border-radius: 50%;
+}
+
+.selection-btn {
+  border: none;
+  block-size: 3em;
+  inline-size: 3em;
+
+  color: inherit;
+  border-radius: 50%;
+
+  background-color: var(--clr-grey-950);
+}
+
+.selection-btn:hover,
+.selection-btn:active {
+  color: var(--clr-grey-950);
+}
+
+.selection-btn:hover {
+  background-color: var(--clr-orange-500);
+}
+
+.selection-btn:active {
+  background-color: var(--clr-white);
+}
+
+.submit-btn {
+  text-transform: uppercase;
 }
 
 .hidden {
