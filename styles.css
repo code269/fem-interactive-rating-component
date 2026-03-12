@@ -1,3 +1,61 @@
+* {
+  /* Primary colors */
+  --clr-orange-500: hsl(25, 97%, 53%);
+
+  /* Neutral colors */
+  --clr-white: hsl(0, 100%, 100%);
+  --clr-grey-500: hsl(217, 12%, 63%);
+  --clr-grey-900: hsl(213, 19%, 18%);
+  --clr-grey-950: hsl(216, 12%, 8%);
+
+  /* Typography */
+  --fs-body: 0.9375rem;
+  --fw-reg: 400;
+  --fw-bold: 700;
+}
+
+/* Reset start */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+ul {
+  list-style: none;
+}
+/* Reset end */
+
 body {
-  background-color: aqua;
+  display: grid;
+  place-items: center;
+
+  min-block-size: 100vh;
+
+  font-family: 'Overpass', sans-serif;
+  font-size: var(--fs-body);
+  background-color: var(--clr-grey-950);
+}
+
+main {
+  color: var(--clr-grey-500);
+  background-color: var(--clr-grey-900);
+}
+
+.heading {
+  color: var(--clr-white);
+}
+
+.hidden {
+  display: none;
 }
