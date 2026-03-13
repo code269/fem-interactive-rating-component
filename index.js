@@ -15,7 +15,7 @@ selectionBtns.forEach((btn) => {
 submitBtn.addEventListener('click', () => {
   const selection = findSelected(selectionBtns);
   if (selection) {
-    setResult(selection);
+    setResult(selection.textContent.trim());
     toggleView();
   }
 });
@@ -30,7 +30,7 @@ function findSelected(btns) {
 }
 
 function setResult(selection) {
-  selectionResult.textContent = `You selected ${selection.textContent} out of 5`;
+  selectionResult.textContent = `You selected ${selection} out of 5`;
 }
 
 function toggleView() {
