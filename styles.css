@@ -98,6 +98,11 @@ button:hover {
   border-radius: 50%;
 }
 
+.selection-btn,
+.submit-btn {
+  font-weight: var(--fw-bold);
+}
+
 .selection-btn {
   border: none;
   block-size: 3em;
@@ -123,7 +128,20 @@ button:hover {
 }
 
 .submit-btn {
+  padding: 1em;
+  border: none;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
+  background-color: var(--clr-orange-500);
+  border-radius: 2em;
+}
+
+.submit-btn:hover {
+  background-color: var(--clr-white);
+}
+
+.submit-btn:active {
+  background-color: var(--clr-orange-500);
 }
 
 .hidden {
