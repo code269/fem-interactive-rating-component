@@ -10,11 +10,12 @@
 
   /* Typography */
   --fs-body: 0.9375rem;
-  --fw-reg: 400;
   --fw-bold: 700;
 
   /* Spacing */
   --space-sm: 1em;
+  --space-md: 1.5em;
+  --space-lg: 2em;
 }
 
 /* Reset start */
@@ -55,7 +56,7 @@ body {
 }
 
 main {
-  padding: 2em;
+  padding: var(--space-lg);
   max-inline-size: 25em;
   border-radius: 1.75em;
   color: var(--clr-grey-500);
@@ -69,7 +70,7 @@ ul {
 }
 
 p {
-  line-height: 1.5em;
+  line-height: 1.7;
 }
 
 button:hover {
@@ -78,7 +79,7 @@ button:hover {
 
 .rating-state {
   display: grid;
-  gap: 1.5em;
+  gap: var(--space-md);
 }
 
 .text-content {
@@ -87,7 +88,7 @@ button:hover {
 }
 
 .heading {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: var(--clr-white);
 }
 
@@ -129,7 +130,7 @@ button:hover {
 
 .submit-btn,
 .return-btn {
-  padding: 1em;
+  padding: var(--space-sm);
   border: none;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -150,7 +151,7 @@ button:hover {
 .results-state {
   display: grid;
   place-items: center;
-  gap: 1.5em;
+  gap: var(--space-md);
   padding-block-end: var(--space-sm);
   text-align: center;
 }
@@ -161,15 +162,14 @@ button:hover {
 
 .selection {
   display: inline-block;
-  padding: 0.75em 1em;
+  padding: 0.75em var(--space-sm);
   border-radius: 2em;
-  /* line-height: 1; */
   color: var(--clr-orange-500);
   background-color: var(--clr-grey-950);
 }
 
 .return-btn {
-  padding-inline: 2em;
+  padding: var(--space-sm) var(--space-lg);
 }
 
 .hidden {
