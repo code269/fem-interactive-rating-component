@@ -14,7 +14,7 @@
   --fw-bold: 700;
 
   /* Spacing */
-  /* --space-lg: 2em; */
+  --space-sm: 1em;
 }
 
 /* Reset start */
@@ -69,7 +69,6 @@ ul {
 }
 
 p {
-  font-size: 0.9em;
   line-height: 1.5em;
 }
 
@@ -79,12 +78,12 @@ button:hover {
 
 .rating-state {
   display: grid;
-  gap: 2em;
+  gap: 1.5em;
 }
 
 .text-content {
   display: grid;
-  gap: 1em;
+  gap: var(--space-sm);
 }
 
 .heading {
@@ -93,6 +92,7 @@ button:hover {
 }
 
 .star-icon {
+  margin-block-end: var(--space-sm);
   background-color: var(--clr-grey-950);
   padding: 0.75em;
   border-radius: 50%;
@@ -105,13 +105,12 @@ button:hover {
 
 .selection-btn {
   border: none;
-  block-size: 3em;
-  inline-size: 3em;
+  block-size: 3.5em;
+  inline-size: 3.5em;
 
   color: inherit;
-  border-radius: 50%;
-
   background-color: var(--clr-grey-950);
+  border-radius: 50%;
 }
 
 .selection-btn:hover,
@@ -142,6 +141,27 @@ button:hover {
 
 .submit-btn:active {
   background-color: var(--clr-orange-500);
+}
+
+.results-state {
+  display: grid;
+  place-items: center;
+  gap: 1.5em;
+  padding-block-end: var(--space-sm);
+  text-align: center;
+}
+
+.results-img {
+  margin: var(--space-sm) auto;
+}
+
+.selection {
+  display: inline-block;
+  padding: 0.75em 1em;
+  border-radius: 2em;
+  /* line-height: 1; */
+  color: var(--clr-orange-500);
+  background-color: var(--clr-grey-950);
 }
 
 .hidden {
