@@ -99,7 +99,8 @@ button:hover {
 }
 
 .selection-btn,
-.submit-btn {
+.submit-btn,
+.return-btn {
   font-weight: var(--fw-bold);
 }
 
@@ -114,7 +115,7 @@ button:hover {
 }
 
 .selection-btn:hover,
-.selection-btn:active {
+.selection-btn.selected {
   color: var(--clr-grey-950);
 }
 
@@ -122,11 +123,12 @@ button:hover {
   background-color: var(--clr-orange-500);
 }
 
-.selection-btn:active {
+.selection-btn.selected {
   background-color: var(--clr-white);
 }
 
-.submit-btn {
+.submit-btn,
+.return-btn {
   padding: 1em;
   border: none;
   letter-spacing: 0.15em;
@@ -135,11 +137,13 @@ button:hover {
   border-radius: 2em;
 }
 
-.submit-btn:hover {
+.submit-btn:hover,
+.return-btn:hover {
   background-color: var(--clr-white);
 }
 
-.submit-btn:active {
+.submit-btn:active,
+.return-btn:active {
   background-color: var(--clr-orange-500);
 }
 
@@ -162,6 +166,10 @@ button:hover {
   /* line-height: 1; */
   color: var(--clr-orange-500);
   background-color: var(--clr-grey-950);
+}
+
+.return-btn {
+  padding-inline: 2em;
 }
 
 .hidden {
