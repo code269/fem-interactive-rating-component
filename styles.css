@@ -8,6 +8,8 @@
   --clr-grey-900: hsl(213, 19%, 18%);
   --clr-grey-950: hsl(216, 12%, 8%);
 
+  --clr-grey-main: hsl(215, 29%, 15%);
+
   /* Typography */
   --fs-body: 0.9375rem;
   --fw-bold: 700;
@@ -60,7 +62,7 @@ main {
   max-inline-size: 25em;
   border-radius: 1.75em;
   color: var(--clr-grey-500);
-  background-color: var(--clr-grey-900);
+  background-color: var(--clr-grey-main);
 }
 
 ul {
@@ -92,10 +94,14 @@ button:hover {
   color: var(--clr-white);
 }
 
+.star-icon,
+.selection-btn {
+  background-color: var(--clr-grey-900);
+}
+
 .star-icon {
   margin-block-end: var(--space-sm);
-  background-color: var(--clr-grey-950);
-  padding: 0.75em;
+  padding: 1em;
   border-radius: 50%;
 }
 
@@ -111,7 +117,6 @@ button:hover {
   inline-size: 3.5em;
 
   color: inherit;
-  background-color: var(--clr-grey-950);
   border-radius: 50%;
 }
 
